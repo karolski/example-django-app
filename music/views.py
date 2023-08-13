@@ -2,8 +2,12 @@ from django.db import models
 from rest_framework import generics, permissions
 
 from .models import Album, Artist
-from .serializers import (AlbumSerializer, AlbumSummarySerializer,
-                          AlbumWithTracksSerializer, ArtistsSerializer)
+from .serializers import (
+    AlbumSerializer,
+    AlbumSummarySerializer,
+    AlbumWithTracksSerializer,
+    ArtistsSerializer,
+)
 
 
 class ArtistsListView(generics.ListAPIView):
