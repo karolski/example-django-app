@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command: >
+      bash -c "pipenv install --system
+      && python manage.py migrate 
+      && python manage.py runserver 0.0.0.0:8080"
+    volumes:
+      - .:/code
+    ports:
+      - "8080:8080"
+    restart: on-failure
+    environment:
+      - DEBUG=1
