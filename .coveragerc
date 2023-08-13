@@ -1,4 +1,0 @@
-[run]
-source = .
-omit = */venv/*, */env/*, */tests*, htmlcov*, */.venv/*
-branch = True

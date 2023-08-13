@@ -7,10 +7,9 @@ name = "pypi"
 django = "4.2.4"
 djangorestframework = "3.14.0"
 django-cleanup = "*"
-mypy = "*"
+tqdm = "*"
 
 [dev-packages]
-tqdm = "*"
 coverage = "*"
 black = "*"
 mypy = "*"
@@ -19,6 +18,7 @@ lxml-stubs = "*"
 types-requests = "*"
 types-tqdm = "*"
 djangorestframework-stubs = "*"
+isort = "*"
 
 [requires]
 python_version = "3.9"

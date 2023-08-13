@@ -11,15 +11,26 @@
 docker-compose up --build -d
 ```
 
+### To develop locally run
+```shell
+PIPENV_VENV_IN_PROJECT=1 pipenv install 
+pipenv shell
+```
+
+### Script to scrape and update artist images
+```shell
+PYTHONPATH=. python artist_image_scraping/scrape_artists_images.py
+```
+
 ### Test
 ```shell
 coverage run manage.py test
 coverage report
 ```
-### Lint
+
+### Static checks/fixes
 ```shell
 black .
-
+mypy .
+isort .
 ```
-### Run script to scrape artist images
-

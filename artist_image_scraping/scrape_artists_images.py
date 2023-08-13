@@ -4,7 +4,7 @@ Script to update images of the artists
 import os
 from logging import getLogger
 from typing import List, Optional
-from urllib.parse import urlparse, quote
+from urllib.parse import quote, urlparse
 
 import requests
 from django.core.files.base import ContentFile
@@ -20,13 +20,13 @@ import django
 
 django.setup()
 
-from music.models import Artists, ArtistImage
+from music.models import Artist, ArtistImage
 
 logger = getLogger(__name__)
 
 
 def update_artists_images() -> None:
-    artists = Artists.objects.filter(name__isnull=False)
+    artists = Artist.objects.filter(name__isnull=False)
     logger.info(f"got {len(artists)} to scrape")
     artist_image_urls = get_artists_image_urls([artist.name for artist in artists])  # type: ignore
     n_image_urls = len([img for img in artist_image_urls if img is not None])

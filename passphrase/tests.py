@@ -1,11 +1,9 @@
 from unittest import TestCase
 
-from passphrase.passphrase_validation import (
-    count_valid_passphrases_basic,
-    contains_unique_words,
-    count_valid_passphrases_advanced,
-    contains_unique_anagrams,
-)
+from passphrase.passphrase_validation import (contains_unique_anagrams,
+                                              contains_unique_words,
+                                              count_valid_passphrases_advanced,
+                                              count_valid_passphrases_basic)
 
 
 class TestPassphraseValidation(TestCase):
