@@ -107,9 +107,9 @@ ENV/
 
 .DS_Store
 *.sqlite3
-media/
+#media/
 *.pyc
-*.db
+#*.db
 *.pid
 # django migrations 
 #**/migrations/**
