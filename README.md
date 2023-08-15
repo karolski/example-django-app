@@ -9,8 +9,13 @@
 - The images and the database are committed in the repository
 - I opted for using requests to crawl images - it is too simple of a task to make a scrapy project for it. 
 
-### relevant links
-- [localhost:8080/music/artists](localhost:8080/music/artists)
+### Relevant links
+- [localhost:8080/music/artists](http://localhost:8080/music/artists)
+- [localhost:8080/music/albums](http://localhost:8080/music/albums)
+- [localhost:8080/music/albums/artist/1](http://localhost:8080/music/albums/artist/1)
+- [localhost:8080/music/albums/summary](http://localhost:8080/music/albums/summary)
+- [localhost:8080/passphrase/basic/](http://localhost:8080/passphrase/basic/)
+- [localhost:8080/passphrase/advanced/](http://localhost:8080/passphrase/advanced/)
 
 
 
