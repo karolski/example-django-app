@@ -21,7 +21,7 @@ and start playing usnig postman or other tools
 
 ### To develop locally run
 ```shell
-PIPENV_VENV_IN_PROJECT=1 pipenv install 
+PIPENV_VENV_IN_PROJECT=1 pipenv install --dev
 pipenv shell
 ```
 
