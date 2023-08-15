@@ -19,6 +19,7 @@ types-requests = "*"
 types-tqdm = "*"
 djangorestframework-stubs = "*"
 isort = "*"
+lxml = "*"
 
 [requires]
 python_version = "3.9"
